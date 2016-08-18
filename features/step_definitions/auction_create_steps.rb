@@ -192,3 +192,7 @@ end
 When(/^there is another accepted auction$/) do
   FactoryGirl.create(:auction, :accepted, :with_bidders)
 end
+
+Given(/^there is a needs evaluation auction$/) do
+  @auction = FactoryGirl.create(:auction, :evaluation_needed)
+end
